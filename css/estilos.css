@@ -1,0 +1,500 @@
+/************
+Generales
+*************/
+body,html{
+    font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden !important;
+} 
+.spinner{
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 2px 1px 0px #a557ff !important;
+}
+.container{
+    padding: 25px 0 50px 0;
+}
+@media all and (max-width: 992px) {
+    .container{
+        padding: 50px 0;
+    }
+}
+/************
+Header
+*************/
+#arriba{
+    background-color: aqua !important;
+    padding: 250px 0;
+}
+#arriba h1{
+    font-weight:700;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing:5px;
+}
+
+#arriba h2{
+    font-weight:300;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+@media all and (max-width: 992px) {
+    #arriba{
+        padding: 240px 0;
+    }
+}
+@media all and (max-width: 768px) {
+    #arriba{
+        padding: 120px 0;
+    }
+    #arriba h1{
+        font-size: 34px;
+    }
+    #arriba h2{
+        font-size: 30px;
+    }
+    #arriba .container{
+        padding: 0 5px;
+    }
+}
+
+/************
+Contenido
+*************/
+
+/*
+Seccion 1
+*************/
+#infomia{
+    background-color: white; 
+    font-family: 'Open-sans', sans-serif; 
+    font-weight: 400;
+    line-height: 28px;
+}
+#infomia h1 {
+    color: #cccccc;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 0.7;
+    margin: 0 40px;
+    position: absolute;
+}
+#infomia h4{
+    font-weight: 700;
+    color: black !important;
+    margin-bottom: 10px;
+}
+#infomia p{
+    font-size: 16px;
+    color: black !important;
+    margin-bottom: 10px;    
+}
+ #infomia .content {
+    padding: 0 6%;
+}
+
+@media all and (max-width: 992px) {
+    #infomia h1 {
+        display: none;
+    }
+}
+
+
+/*
+Seccion 2
+*************/
+#conocimientos{
+    background: #8dfef5 url(../img/engranajes.png) no-repeat bottom right;
+    padding: 0;
+}
+#conocimientos h1 {
+    color: #cefffb;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 0.7;
+    margin: 0 40px;
+    position: absolute;
+}
+#conocimientos h3 {
+    color: black;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#conocimientos .progress-bars {
+    margin-bottom: 0;
+}
+#conocimientos .progress-bars .progress-1{
+    margin-bottom: 15px;
+}
+#conocimientos .progress-bar {
+    background-color: #a557ff;
+}
+@media all and (max-width: 992px) {
+    #conocimientos{
+        background-image: none;
+    }
+    #conocimientos h1 {
+        display: none;
+    }
+}
+
+
+/*
+Seccion 3
+*************/
+#portfolio{
+    padding: 0;
+}
+#portfolio h1 {
+    color: #cccccc;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 0.7;
+    margin: 0 40px;
+    position: absolute;
+}
+#portfolio h3{
+    color: black;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#portfolio .filters{
+    display: block;
+}
+#portfolio .filters li{
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    color: black !important;
+    width: 23%;
+    text-align: center;
+    margin: 20px 1%;
+    font-size: 14px;
+    font-family: 'Open-sans', sans-serif; 
+    font-weight: 700;
+    border-radius: 0;
+    opacity: 1;
+}
+#portfolio .filters li:hover,
+#portfolio .filters li.active {
+    border-bottom: 2px solid #a557ff !important;
+    color: #a557ff !important;
+}
+@media all and (max-width: 992px) {
+    #portfolio h1 {
+        display: none;
+    }
+    .portfolio-modal .modal-content iframe {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #portfolio .filters{
+    display: inline-block;
+}
+    #portfolio .filters li{
+        clear: both;
+        width: 200px;
+        margin: 5px 0;
+    }
+    .portfolio-modal .modal-content iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+#portfolio .container .project{
+    padding: 0 1px;
+    margin-bottom: 2px;
+}
+#portfolio .container .inner-title:hover {
+    opacity: 1;
+}
+#portfolio .container .inner-title.hover-reveal:hover:before {
+    opacity: 0;
+}
+#portfolio .container .inner-title .title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+#portfolio .container .inner-title .title:hover  {
+  opacity: 1;
+}
+#portfolio .container .inner-title .title .info{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#portfolio .container .inner-title .title .info i{
+    font-size: 50px;
+    color: white;
+}
+
+.portfolio-modal{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin: 0;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.portfolio-modal .modal-content .star-primary {
+  border: 1px solid black;
+}
+.portfolio-modal .modal-content p {
+  color: black;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.portfolio-modal .modal-content a{
+  color: #a557ff;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 700;
+    font-size: 18px;
+  font-style: italic;
+}
+.portfolio-modal .modal-content img {
+  margin: auto;
+  margin-bottom: 10px;
+    display: block;
+}
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+.portfolio-modal .close-modal {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  color: black;
+    z-index: 1000;
+}
+.portfolio-modal .close-modal .lr {
+  height: 40px;
+  width: 2px;
+  margin-left: 20px;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: 51;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 40px;
+  width: 2px;
+  background-color: black;
+  transform: rotate(90deg);
+  z-index: 52;
+}
+.portfolio-modal .close-modal .lr:hover,
+.portfolio-modal .close-modal .lr .rl:hover,
+.portfolio-modal .close-modal .lr:active,
+.portfolio-modal .close-modal .lr .rl:active,
+.portfolio-modal .close-modal .lr:focus
+.portfolio-modal .close-modal .lr .rl:focus {
+  background-color: #a557ff;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+
+/*
+Seccion 4
+*************/
+#contacto{
+    background: black url(../img/avion.png) no-repeat bottom right;
+    padding: 0;
+}
+#contacto .container {
+    padding: 25px 15px 50px 15px;
+}
+#contacto h1 {
+    color: #1c1c1c;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 0.7;
+    margin: 0 40px;
+    position: absolute;
+}
+
+#contacto h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#contacto form input {
+    margin-bottom: 15px |;
+    padding: 5px;
+    background-color: transparent;
+    width: 100%;
+    border: 0;
+    border-bottom: 3px solid white;
+    color: white;
+    font-family: 'Open-sans',sans-serif;
+    font-size: 16px;    
+}
+#contacto form textarea {
+    color: black;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+    color: white;
+    font-family: 'Open-sans',sans-serif;
+    font-size: 16px;
+}
+#contacto form input:focus, #contacto form textarea:focus{
+    outline: 0px;
+}
+#contacto .form-error, #contacto .form-success {
+    color: white;
+    font-family: 'Open-sans',sans-serif !important;
+    font-size: 16px !important; 
+    font-weight: 400 !important;
+    text-align: center !important;
+}
+#contacto .attempted-submit .field-error{
+    outline: 0 !important;
+    border-bottom-color: #ce3838 !important;
+}
+
+@media all and (max-width: 992px) {
+    #contacto{
+        background-image: none;
+    }
+    #contacto h1 {
+        display: none;
+    }
+    #contacto .container {
+        padding: 50px 15px;
+    }
+}
+
+/************
+Footer
+*************/
+#footer{
+    font-family: 'Poppins' !important;
+    padding: 0;
+}
+#footer .container{
+    padding: 50px 0;
+}
+#footer h2{
+    color: white !important;
+    padding-top: 0px;
+    font-weight: 700 !important;
+    letter-spacing: 5px;
+}
+#footer h3{
+    color: white !important;
+    font-weight: 300 !important;
+    margin-bottom: 0 !important;
+}
+
+#footer p{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    margin: 20px 0 0 0 !important;
+    color: white !important;
+    font-weight: 400;
+}
+.list-inline li{
+    padding: 0 !important;
+    margin-top: 20px;
+}
+
+/************
+Botones
+*************/
+.btn-social{
+    color: white !important;
+    margin: 0px 20px;
+}
+.btn-social i {
+    font-size: 30px; 
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 12px;
+}
+.btn-social i:hover, 
+.btn-social i:focus, 
+.btn-social i:active,
+.btn-social i:visited{
+    color: #66a7a3 !important;
+    background: white;
+    border: 1px solid white;
+}
+
+@media all and (max-width: 768px) {
+    .btn-social{
+        margin: 0px 10px;
+    }
+}
+
+#arriba .btn,
+#arriba .btn:active,
+#arriba .btn:focus,
+#arriba .btn:hover,
+#arriba .btn:visited{
+    background-color: transparent;
+    width: 80px;
+    border: none;
+    padding: 0;
+}
+#footer .btn,
+#footer .btn:active,
+#footer .btn:focus,
+#footer .btn:hover,
+#footer .btn:visited{
+    background-color: transparent;
+    width: 80px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+#contacto .btn-contacto {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 0;
+    
+}
+#contacto .btn-contacto:focus, #contacto .btn-contacto:hover{
+    outline: 0px;
+    background-color: black;
+    color: white;
+}
